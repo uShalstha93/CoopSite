@@ -12,6 +12,7 @@ import AssetsPurchaseSubComittee from './Components/Pages/Hr/AssetsPurchaseSubCo
 import ManagementTeam from './Components/Pages/Hr/ManagementTeam';
 import BranchesPage from './Components/Pages/Main/BranchesPage';
 import Branch1 from './Components/Pages/Branches/Branch1';
+import Branch2 from './Components/Pages/Branches/Branch2';
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
 
         {/* branches routes */}
         <Route exact path='/branches/kotihawa-service-center' element={<Branch1 />} />
+        <Route exact path='/branches/pahuch-service-center' element={<Branch2 />} />
 
         {/* other routes */}
         <Route path='*' element={<div style={{ display: 'flex', justifyContent: 'center', }}><p><b>404 PAGE NOT FOUND !</b></p></div>} />

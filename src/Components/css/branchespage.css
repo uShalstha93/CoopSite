@@ -166,7 +166,7 @@
 .branch-section .branch-section-right .card-section .card-section-img img {
     width: 45%;
     border: 2px solid lightgray;
-    border-radius: 50%;
+    border-radius: 5px;
     padding: 5px;
 }
 
