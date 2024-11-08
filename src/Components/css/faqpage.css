@@ -1,0 +1,107 @@
+.faq-top {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.faq-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 5px;
+    padding-bottom: 0.2em;
+    position: relative;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.faq-title h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.faq-title::before {
+    content: "";
+    background-color: #fdc900;
+    width: 35px;
+    height: 5px;
+    position: absolute;
+    left: 7px;
+    bottom: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.accordion-item {
+    border: none !important;
+    outline: none !important;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 166, 80);
+    margin: 5px 2rem 5px 2rem;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-family: 'hind', sans-serif;
+}
+
+.accordion-title h3 {
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+    padding-top: 5px;
+}
+
+.accordion-item .accordion-content {
+    /* max-height: 0; */
+    /* overflow: hidden; */
+    padding: 0 10px;
+    margin: 10px 2rem 5px 2rem;
+    border: 0.5px solid rgb(0, 166, 80);
+    margin-top: -5px;
+    border-radius: 0 0 5px 5px;
+    text-align: justify;
+    /* transition: max-height 1s ease, padding 1s ease; */
+}
+
+.accordion-item .accordion-content p {
+    margin: 5px;
+    padding-left: 0.5rem;
+}
+
+.accordion-title h3 i {
+    font-size: 16px;
+}
+
+@media (max-width:768px) {
+    .faq-title h2 {
+        font-size: 20px;
+    }
+
+    .accordion-title {
+        text-align: left;
+    }
+
+    .accordion-title h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 10px;
+        padding-top: 5px;
+    }
+
+    .accordion-item .accordion-content p {
+        margin: 5px;
+        padding-left: 0;
+    }
+}

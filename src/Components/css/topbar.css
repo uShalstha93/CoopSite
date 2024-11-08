@@ -1,0 +1,112 @@
+.topbar-style-1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(251, 228, 228);
+    font-family: 'hind', sans-serif;
+    font-size: 13px;
+}
+
+.topbar-contact {
+    display: flex;
+    width: 80%;
+    margin: 5px 5px 5px 6rem;
+}
+
+.topbar-follow {
+    display: flex;
+    width: 20%;
+    margin: 5px 5px 0 5px;
+}
+
+.topbar-contact-1,
+.topbar-contact-2 {
+    display: flex;
+    margin: 5px 5px 0 5px;
+}
+
+.topbar-contact-1 p,
+.topbar-contact-2 p,
+.topbar-follow p {
+    margin: 0 0 0 5px;
+}
+
+.topbar-contact-1 span {
+    margin: 0 5rem 0 5rem;
+}
+
+.topbar-contact-1 i,
+.topbar-contact-2 i {
+    color: gray;
+}
+
+.topbar-follow p {
+    margin: 0 5px 0 0;
+}
+
+.topbar-follow a {
+    color: gray;
+}
+
+.topbar-follow a:hover {
+    color: blue;
+}
+
+.topbar-follow i {
+    margin: 0 5px;
+}
+
+@media (max-width: 996px) {
+    .topbar-style-1 {
+        font-size: 10px;
+    }
+
+    .topbar-contact-1 span {
+        margin: 0 1rem 0 1rem;
+    }
+
+    .topbar-follow {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .topbar-style-1 {
+        font-size: 10px;
+    }
+
+    .topbar-contact {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 70%;
+        margin-left: 1.5rem;
+    }
+
+    .topbar-contact-1 span {
+        margin: 0;
+    }
+
+    .topbar-follow {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+    }
+
+    .topbar-follow .follow-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topbar-follow .follow-2 {
+        margin: 6px;
+    }
+
+    .topbar-follow .follow-2 i {
+        font-size: 13px;
+    }
+}

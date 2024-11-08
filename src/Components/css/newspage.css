@@ -1,0 +1,34 @@
+.news-div {
+    background-color: rgb(234, 255, 234);
+    border-radius: 5px;
+}
+
+.news-slider {
+    display: flex;
+    height: 100px;
+}
+
+.newsSlider-2 {
+    display: flex;
+}
+
+.news-slider p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin: 5px 5px 5px 2rem;
+    padding: 10px;
+    background: linear-gradient(to right, #064678, rgb(0, 166, 80));
+    border-radius: 5px;
+    color: white;
+}
+
+@media(max-width:768px) {
+    .news-slider {
+        justify-content: center;
+    }
+
+    .news-slider p {
+        font-size: 20px;
+        margin: 1.5rem 0 0 0;
+    }
+}

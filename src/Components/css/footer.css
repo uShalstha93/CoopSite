@@ -1,0 +1,12 @@
+.footer-section {
+    background-color: rgb(0, 166, 80);
+    color: white;
+    font-family: 'hind', sans-serif;
+    padding: 5px;
+}
+
+@media(max-width:768px) {
+    .footer-section h6 {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,177 @@
+.heading1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.heading1 .h2 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 166, 80);
+}
+
+.heading1 .h2 hr {
+    border: 1px solid red;
+    border-radius: 5px;
+    opacity: 1;
+    margin-top: -5px;
+}
+
+.president1 {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.president1 .president-img {
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+    width: 50%;
+}
+
+.president1 .president-img img {
+    width: 40%;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    padding: 5px;
+}
+
+.president1 .president-detail {
+    margin-left: 2rem;
+}
+
+.president1 .president-detail h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.president1 .president-detail h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: rgb(0, 166, 80);
+}
+
+.president2 {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.president2 .president2-body {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    margin: 10px 1rem;
+    border-left: 2px solid rgb(0, 166, 80);
+}
+
+.president2 .president2-body .president2-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.president2 .president2-body .president2-img img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    padding: 5px;
+}
+
+.president2 .president2-detail {
+    margin-left: 1rem;
+    width: 50%;
+}
+
+.president2 .president2-detail h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.president2 .president2-detail h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: rgb(0, 166, 80);
+}
+
+@media (max-width:996px) {
+    .president2 .president2-body {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .president1 .president-img img {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .heading1 .h2 h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: rgb(0, 166, 80);
+    }
+
+    .president1 .president-img img {
+        width: 70%;
+        border-radius: 50%;
+        border: 2px solid lightgray;
+        padding: 5px;
+    }
+
+    .president1 .president-detail {
+        margin-left: 1rem;
+    }
+
+    .president1 .president-detail h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+
+    .president1 .president-detail h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: rgb(0, 166, 80);
+    }
+
+    .president2 .president2-body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+        margin: 10px 0;
+        border-left: 2px solid rgb(0, 166, 80);
+        border-right: 2px solid rgb(0, 166, 80);
+    }
+
+    .president2 .president2-body .president2-img img {
+        width: 70px;
+        height: auto;
+        border-radius: 50%;
+        border: 2px solid lightgray;
+        padding: 5px;
+    }
+
+    .president2 .president2-detail h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+
+    .president2 .president2-detail h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        color: rgb(0, 166, 80);
+    }
+}

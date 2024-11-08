@@ -1,0 +1,181 @@
+.main {
+    display: flex;
+    font-family: 'hind', sans-serif;
+}
+
+.left-fixed,
+.right-fixed {
+    width: 10%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80% !important;
+}
+
+.welcome-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 5px;
+    padding-bottom: 0.2em;
+    position: relative;
+    letter-spacing: -1px;
+    font-weight: 700;
+    width: 25%;
+}
+
+.welcome-title::before {
+    content: "";
+    background-color: #fdc900;
+    width: 35px;
+    height: 5px;
+    position: absolute;
+    left: 7px;
+    bottom: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.welcome-title h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.service-top {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.service-title {
+    width: 15%;
+}
+
+.service-detail {
+    width: 60%;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+}
+
+.service-detail p {
+    margin: 5px;
+    padding: 5px;
+}
+
+.all-service-link {
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.all-service-link a {
+    text-decoration: none;
+}
+
+.welcome-body {
+    display: flex;
+}
+
+.welcome-body .welcome-text {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.welcome-body .welcome-image {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.welcome-body .welcome-image img {
+    width: 80%;
+}
+
+.theme-btn {
+    background-color: rgb(0, 166, 80);
+    font-size: 16px;
+    font-size: 1.06667rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 25px;
+    border: 2px solid rgb(0, 166, 80);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.theme-btn:hover {
+    background-color: #064678;
+    color: #fff;
+    border: 2px solid #064678;
+}
+
+.welcome-text a {
+    text-decoration: none;
+}
+
+@media (max-width:996px) {
+    .welcome-body .welcome-image img {
+        width: 70%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .welcome-title h2 {
+        font-size: 20px;
+    }
+
+    .welcome-body {
+        display: inline;
+    }
+
+    .welcome-body .welcome-text {
+        text-align: justify;
+        width: 96%;
+    }
+
+    .welcome-body .welcome-text {
+        font-size: 14px;
+    }
+
+    .welcome-body .welcome-text a {
+        font-size: 12px;
+    }
+
+    .welcome-body .welcome-image {
+        margin-top: 2rem;
+        width: 96%;
+    }
+
+    .welcome-body .welcome-image img {
+        width: 40%;
+    }
+
+    .theme-btn {
+        font-size: 14px;
+    }
+}

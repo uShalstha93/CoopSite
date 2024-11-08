@@ -1,0 +1,76 @@
+.container {
+    width: 80% !important;
+}
+
+.lower-topbar {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.site-logo {
+    width: 100%;
+    margin: 5px 5px 5px 1rem;
+    padding: 5px;
+}
+
+.site-logo img {
+    width: 90%;
+}
+
+.awards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.award-info img {
+    max-height: 110px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+@media (max-width: 996px) {
+    .award-info img {
+        max-height: 70px;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .awards {
+        visibility: collapse;
+    }
+
+    .empty {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .awards-div {
+        position: relative;
+        height: 1px;
+        margin-bottom: -1.5rem;
+        visibility: hidden;
+    }
+
+    .site-logo {
+        margin: auto;
+        max-width: 250px;
+        margin-bottom: -15px;
+    }
+
+    .site-logo img {
+        vertical-align: middle;
+        margin-top: -1.5rem;
+    }
+
+    .row {
+        display: inline !important;
+        height: auto;
+    }
+}

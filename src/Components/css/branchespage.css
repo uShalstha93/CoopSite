@@ -1,0 +1,307 @@
+.branches-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.welcome-title-center,
+.welcome-title-center1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 5px;
+    padding-bottom: 0.2em;
+    position: relative;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.welcome-title-center::before,
+.welcome-title-center1::before {
+    content: "";
+    background-color: #fdc900;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.welcome-title-center h2,
+.welcome-title-center1 h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.branches-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.card-container .card {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 10px;
+    float: left;
+    position: relative;
+}
+
+.inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.inner .detail {
+    background-color: #ffd52e;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    transform: translateY(90px);
+    transition: all 0.8s ease;
+}
+
+.inner .detail h3 {
+    font-family: 'hind', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.inner .detail a {
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover .inner .detail {
+    transform: translateY(0);
+}
+
+.branch-section {
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.branch-section .branch-section-left {
+    position: relative;
+    overflow: hidden;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 166, 80);
+}
+
+.branch-section .branch-section-left img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.branch-section .branch-section-right {
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.branch-section .branch-section-right .card-section {
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(247, 247, 217);
+}
+
+.branch-section .branch-section-right .card-section .card-section-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.branch-section .branch-section-right .card-section .card-section-img img {
+    width: 45%;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.branch-section .branch-section-right .card-section .card-section-img h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    opacity: 0.5;
+    margin: 5px;
+}
+
+.branch-section .branch-section-right .card-section .card-section-detail {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+}
+
+.branch-section .branch-section-right .card-section .card-section-detail h3 {
+    font-size: 16px;
+}
+
+.branch-section .branch-section-right .card-section .card-section-detail i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: rgb(0, 166, 80);
+}
+
+.branch-section-bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    border-radius: 5px;
+}
+
+.branch-section-bottom .welcome-center {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.branch-section-bottom .welcome-center h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: rgb(128, 0, 128);
+}
+
+@media(max-width:996px) {
+    .branch-section .branch-section-right .card-section .card-section-title h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .branch-section .branch-section-right .card-section .card-section-img h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        opacity: 0.5;
+        margin: 5px;
+    }
+
+    .branch-section .branch-section-right .card-section .card-section-detail h3 {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:768px) {
+    .branches-body {
+        margin-left: 1rem;
+    }
+
+    .welcome-title-center h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .welcome-title-center1 h2 {
+        font-size: 15px;
+    }
+
+    .welcome-title-center1::before {
+        width: 60%;
+        left: 20%;
+    }
+
+    .branch-section-bottom .welcome-center h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: rgb(128, 0, 128);
+    }
+
+    .branch-section {
+        display: flex;
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .branch-section .branch-section-left {
+        position: relative;
+        overflow: hidden;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        box-shadow: 5px 5px 5px rgb(0, 166, 80);
+        margin-left: 10px;
+    }
+
+    .branch-section .branch-section-right {
+        position: relative;
+        overflow: hidden;
+        width: 96%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 5px;
+        padding: 5px;
+        margin-bottom: -5px;
+    }
+
+    .branch-section .branch-section-right .card-section .card-section-title h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .branch-section .branch-section-right .card-section .card-section-detail i {
+        margin-left: 5px;
+        margin-right: 5px;
+        color: rgb(0, 166, 80);
+    }
+}
