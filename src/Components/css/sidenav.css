@@ -1,0 +1,86 @@
+.d-body {
+    display: flex;
+    width: 80%;
+}
+
+.d-body-nav {
+    width: 30%;
+}
+
+.d-boy-main {
+    width: 60% !important;
+}
+
+.sidenav-body {
+    width: 100%;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+    margin: 5px 5px 5px -20px;
+    font-size: 15px;
+}
+
+.sidenav .h4sidelink {
+    font-size: 18px;
+    width: 200px;
+    background-color: rgb(0, 166, 80);
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 166, 80);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sidenav .sidelink {
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(245, 242, 242);
+    border-radius: 5px;
+    background-color: rgb(245, 242, 242);
+    margin: 5px;
+    padding: 5px 25px;
+}
+
+.sidenav span {
+    font-weight: 600;
+    color: black;
+}
+
+.sidenav .sidelink:hover {
+    background-color: rgb(0, 166, 80);
+    border: 1px solid rgb(0, 166, 80);
+}
+
+.sidenav .sidelink:hover span {
+    color: white;
+}
+
+.saving-body {
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.saving-body .savingimg {
+    margin: 5px;
+    padding: 5px;
+}
+
+.saving-body .savingimg img {
+    width: 80%;
+    height: auto;
+}
+.saving-body .savingname h2{
+    font-size: 16px;
+    font-weight: 600;
+}
