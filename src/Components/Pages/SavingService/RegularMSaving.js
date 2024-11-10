@@ -1,6 +1,7 @@
 import React from 'react'
 import SavingImg1 from '../../Images/SavingImg/RegularMonthlySaving.jpg'
 import SideNav from '../Navigation/SideNav'
+import '../../css/sidenav.css'
 
 const RegularMSaving = () => {
     return (
