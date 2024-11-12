@@ -21,6 +21,12 @@ import UjjalBhabishyaSaving from './Components/Pages/SavingService/UjjalBhabishy
 import DailySaving from './Components/Pages/SavingService/DailySaving';
 import SajiloSaving from './Components/Pages/SavingService/SajiloSaving';
 import SavingAll from './Components/Pages/SavingService/SavingAll';
+import CreditAll from './Components/Pages/CreditService/CreditAll';
+import ForeignLoan from './Components/Pages/CreditService/ForeignLoan';
+import EducationLoan from './Components/Pages/CreditService/EducationLoan';
+import VehicleLoan from './Components/Pages/CreditService/VehicleLoan';
+import YatayatSewaLoan from './Components/Pages/CreditService/YatayatSewaLoan';
+import AawashLoan from './Components/Pages/CreditService/AawashLoan';
 
 const App = () => {
   return (
@@ -56,7 +62,7 @@ const App = () => {
         <Route exact path='/branches/kotihawa-service-center' element={<Branch1 />} />
         <Route exact path='/branches/pahuch-service-center' element={<Branch2 />} />
 
-        {/* saving services */}
+        {/* saving services routes */}
         <Route exact path='/service/saving-service' element={<div className='main'>
           <div className='left-fixed'></div>
           <div className='container'>
@@ -72,6 +78,22 @@ const App = () => {
         <Route path='/service/saving-service/ujjalbhabishyasaving' element={<UjjalBhabishyaSaving />} />
         <Route path='/service/saving-service/dailysaving' element={<DailySaving />} />
         <Route path='/service/saving-service/sajilosaving' element={<SajiloSaving />} />
+
+        {/* credit services routes */}
+        <Route exact path='/service/loan-service' element={
+          <div className='main'>
+            <div className='left-fixed'></div>
+            <div className='container'>
+              <CreditAll />
+            </div>
+            <div className='right-fixed'></div>
+          </div>
+        } />
+        <Route exact path='/service/loan-service/foreignloan' element={<ForeignLoan />} />
+        <Route exact path='/service/loan-service/educationloan' element={<EducationLoan />} />
+        <Route exact path='/service/loan-service/vehicleloan' element={<VehicleLoan />} />
+        <Route exact path='/service/loan-service/yatayatsewaloan' element={<YatayatSewaLoan />} />
+        <Route exact path='/service/loan-service/aawashloan' element={<AawashLoan />} />
 
         {/* other routes */}
         <Route path='*' element={<div style={{ display: 'flex', justifyContent: 'center', }}><p><b>404 PAGE NOT FOUND !</b></p></div>} />

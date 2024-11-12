@@ -30,7 +30,7 @@ const Navibar = () => {
     useEffect(() => {
         const handleScroll = () => {
             setSticky(window.scrollY > 190)
-            console.log(window.scrollY)
+            // console.log(window.scrollY)
         }
         window.addEventListener("scroll", handleScroll)
         return () => window.removeEventListener("scroll", handleScroll)
