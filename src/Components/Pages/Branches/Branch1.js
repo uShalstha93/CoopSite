@@ -33,6 +33,12 @@ const Branch1 = () => {
             post: 'Sub Comittee Member',
             memImg: Person4
         },
+        {
+            id: '5',
+            memName: 'Chetram Parajuli',
+            post: 'Sub Comittee Member',
+            memImg: Person4
+        },
     ]
 
     return (
